@@ -6,6 +6,8 @@ require('dotenv').config();
 
 require('./config/database');
 
+const privateersRouter = require('./routes/api/privateers');
+
 const app = express();
 
 app.use(logger('dev'));

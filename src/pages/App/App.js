@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from '../../logo.svg';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import MainPage from '../../pages/MainPage/MainPage';
 import userService from '../../utils/userService';
+import NavBar from '../../components/NavBar/NavBar';
 
 
 
@@ -13,9 +14,6 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      ...this.getInitialState(),
-      difficulty: 'Easy',
-      scores: [],
       user: userService.getUser()
     };
   }
