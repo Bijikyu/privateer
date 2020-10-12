@@ -3,6 +3,7 @@ import logo from '../../logo.svg';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 
+import LandingPage from '../LandingPage/LandingPage';
 import MainPage from '../MainPage/MainPage';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
@@ -24,9 +25,9 @@ class App extends Component {
     };
   }
 
-  handleAddPrivateer = async newPrivData => {
+  handleAddPrivateer = async (newPrivData) => {
     const newPriv = await privateerAPI.create(newPrivData);
-    this.setState(state => ({
+    this.setState((state) => ({
       privateers: [...state.privateers, newPriv]
     }),
     () => this.props.history.push('/'));
@@ -71,8 +72,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <image>{logo}</image>
-          Privateer
+          <image src=""></image>
+          <h1>Privateer</h1>
           <nav>
             <NavBar 
               user={this.state.user} 
@@ -83,6 +84,11 @@ class App extends Component {
         <main> 
           <Switch>
             <Route exact path="/" render={() => (
+              <LandingPage user={this.state.user}
+                privateers={this.state.privateers}
+              />)}
+            />
+            <Route exact path="/home" render={() => (
               <MainPage user={this.state.user}
                 privateers={this.state.privateers}
                 handleDeletePrivateer={this.handleDeletePrivateer}

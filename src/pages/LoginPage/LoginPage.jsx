@@ -48,7 +48,7 @@ class LoginPage extends Component {
           <div className="form-group">
             <label>Your email (required)</label>
             <input className="form-control" name="email" required
-                value={this.state.emailformData.email} onChange={this.handleChange}/>
+                value={this.state.formData.email} onChange={this.handleChange}/>
           </div>
           <div className="form-group">
             <label>Your password</label>
