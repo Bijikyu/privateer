@@ -1,5 +1,5 @@
 import React from 'react';
-import PrivateerListItem from '../../components/PuppyListItem/PuppyListItem';
+import PrivateerListItem from '../PrivateerListItem/PrivateerListItem';
 
 function PrivateerList(props) {
   return (

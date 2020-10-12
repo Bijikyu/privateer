@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class AddPuppyPage extends Component {
+class AddPrivateerPage extends Component {
   state = {
     invalidForm: true,
     formData: {}
