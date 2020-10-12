@@ -6,7 +6,7 @@ In the Age of Sail, privateers were pirate hunters, often little different than 
 ![Screenshot of Desktop View of Privateer Landing Page](URL-TBD)
 ![Screenshot of Mobile View of Privateer Landing Page](URL-TBD)
 
-**Technologies Used:** Javascript, HTML, CSS, NodeJS, Express, MongoDB, Mongoose, Google OAuth, Paint.net.
+**Technologies Used:** Javascript, HTML, CSS, React, NodeJS, Express, MongoDB, Mongoose, Token based auth, Paint.net.
 
 **Getting Started:** [Link to the App](https://privateer.herokuapp.com/)
 
