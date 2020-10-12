@@ -5,6 +5,9 @@ import { Route, Switch } from 'react-router-dom';
 import MainPage from '../../pages/MainPage/MainPage';
 import userService from '../../utils/userService';
 import NavBar from '../../components/NavBar/NavBar';
+import SignupPage from '../SignupPage/SignupPage';
+//import LoginPage from '../LoginPage/LoginPage';
+
 
 
 
@@ -38,9 +41,12 @@ class App extends Component {
           />
         </header>
       <Switch>
-        <Route render={() => (
+        <Route exact path="/" />
           <MainPage/>
-        )}/>
+        <Route />
+        <Route exact path="/signup" />
+          <SignupPage/>
+        <Route />
       </Switch>
     </div>
     );
