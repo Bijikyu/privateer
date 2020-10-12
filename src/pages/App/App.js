@@ -86,6 +86,7 @@ class App extends Component {
             <Route exact path="/" render={() => (
               <LandingPage user={this.state.user}
                 privateers={this.state.privateers}
+                handleDeletePrivateer={this.handleDeletePrivateer}
               />)}
             />
             <Route exact path="/home" render={() => (

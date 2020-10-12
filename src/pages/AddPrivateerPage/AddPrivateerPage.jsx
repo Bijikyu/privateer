@@ -3,7 +3,11 @@ import React, {Component} from 'react';
 class AddPrivateerPage extends Component {
   state = {
     invalidForm: true,
-    formData: {}
+    formData: {
+        booty: '',
+        bounty: '10',
+        canon: ''
+    }
   };
 
   formRef = React.createRef();
