@@ -1,0 +1,38 @@
+body {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 50vw;
+}
+
+button {
+    margin: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fleet {
+    background: lightblue url("https://i.gifer.com/FmOm.gif") no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: auto;
+}
+
+.ship {
+    background: url("https://media.giphy.com/media/j2HThVbydxrvyljqq0/giphy.gif") no-repeat;
+    background-size: 90px 90px;
+    /*width: 30vw;
+    height: auto;*/
+}
