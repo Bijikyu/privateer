@@ -9,7 +9,9 @@ module.exports = {
 };
 
 async function index(req, res) {
-  const privateers = await Privateer.find({});
+  console.log("hitting index function", req.user );
+  const privateers = await Privateer.find({createdBy: req.user._id});
+  console.log(privateers);
   res.status(200).json(privateers);
 }
 
@@ -19,7 +21,10 @@ async function show(req, res) {
 }
 
 async function create(req, res) {
+  console.log("hitting create function", req.user );
+  req.body.createdBy = req.user._id
   const privateer = await Privateer.create(req.body);
+  console.log(privateer);
   res.status(201).json(privateer);
 }
 

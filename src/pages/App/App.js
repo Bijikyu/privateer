@@ -61,10 +61,12 @@ class App extends Component {
 
   handleSignupOrLogin = () => {
     this.setState({ user: userService.getUser() });
+    console.log(this.state.user);
   };
 
-  async componentDidMount() {
+  componentDidMount = async () => {
     const privateers = await privateerAPI.getAll();
+    console.log("little string", privateers);
     this.setState({ privateers });
   }
   
@@ -106,7 +108,8 @@ class App extends Component {
               />)}
             />
             <Route exact path="/add" render={() => (
-              <AddPrivateerPage handleAddPrivateer={this.handleAddPrivateer}/>
+              <AddPrivateerPage user={this.state.user}
+              handleAddPrivateer={this.handleAddPrivateer}/>
               )}
             />
             <Route exact path="/details" render={({ location }) => (

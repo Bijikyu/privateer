@@ -9,9 +9,11 @@ function PrivateerCard({privateer}) {
       </div>
       <div className='panel-body'>
         <dl>
-          <dt>Bounty</dt>
-          <dd>{privateer.bounty}</dd>
-          <dt>Canon</dt>
+          <dt>Bounty: ${privateer.bounty}</dt>
+          <dd>Bounty: ${privateer.bounty}</dd>
+          <br></br>
+          <dt>Your Cease and Desist Letter for this Product/Brand</dt>
+          <br></br>
           <dd>{privateer.canon}</dd>
         </dl>
       </div>

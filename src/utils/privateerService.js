@@ -1,9 +1,14 @@
+import tokenService from './tokenService';
+
 const BASE_URL = '/api/privateers';
 
 export function create(priv) {
   return fetch(BASE_URL, {
     method: 'POST',
-    headers: {'content-type': 'application/json'},
+    headers: {
+        'Content-type': 'application/json',
+        'Authorization': 'Bearer ' + tokenService.getToken()
+    },
     body: JSON.stringify(priv)
   }).then(res => res.json());
 }
@@ -11,7 +16,7 @@ export function create(priv) {
 export function getAll() {
     return fetch(BASE_URL)
     .then(res => res.json());
-  }
+}
 
 export function update(priv) {
   return fetch(`${BASE_URL}/${priv._id}`, {

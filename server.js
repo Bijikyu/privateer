@@ -2,13 +2,15 @@ const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
-require('dotenv').config();
+//var bodyParser = require('body-parser');
 
+const app = express();
+
+require('dotenv').config();
 require('./config/database');
 
 const privateersRouter = require('./routes/api/privateers');
 
-const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());

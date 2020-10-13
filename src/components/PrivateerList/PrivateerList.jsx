@@ -4,7 +4,7 @@ import PrivateerListItem from '../PrivateerListItem/PrivateerListItem';
 function PrivateerList(props) {
   return (
     <>
-      {!props.user ? ( <></> ) : (
+      {!props.user || !props.privateers.length ? ( <></> ) : (
         <div>
             <h1>Your Fleet</h1>
             {props.privateers.map(privateer => 
