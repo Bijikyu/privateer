@@ -24,10 +24,12 @@ button {
 }
 
 .fleet {
-    background: lightblue url("https://i.gifer.com/FmOm.gif") no-repeat;
-    background-size: 100% 100%;
+    background: lightblue url("https://i.gifer.com/RowJ.gif") no-repeat;
+    background-size: 100% 200%;
+    background-position: 50% 85%;
     width: 100vw;
     height: auto;
+    padding-bottom: -10px;
 }
 
 .ship {

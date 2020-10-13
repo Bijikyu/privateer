@@ -12,6 +12,7 @@ import EditPrivateerPage from "../EditPrivateerPage/EditPrivateerPage";
 import PrivateerDetailPage from "../PrivateerDetailPage/PrivateerDetailPage";
 
 import userService from '../../utils/userService';
+import privateerService from '../../utils/privateerService';
 import * as privateerAPI from "../../utils/privateerService";
 
 import NavBar from '../../components/NavBar/NavBar';
@@ -56,12 +57,17 @@ class App extends Component {
 
   handleLogout = () => {
     userService.logout();
-    this.setState({ user: null });
+    this.setState({ 
+      user: null,
+      privateers: [] 
+    });
   }
 
-  handleSignupOrLogin = () => {
-    this.setState({ user: userService.getUser() });
-    console.log(this.state.user);
+  handleSignupOrLogin = async () => {
+    this.setState({ 
+      user: userService.getUser(),
+      privateers: await privateerService.getAll()  
+    });
   };
 
   componentDidMount = async () => {

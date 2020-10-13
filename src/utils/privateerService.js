@@ -34,3 +34,10 @@ export function deleteOne(id) {
     method: 'DELETE'
   }).then(res => res.json());
 }
+
+export default {
+  create,
+  getAll,
+  update,
+  deleteOne
+};
