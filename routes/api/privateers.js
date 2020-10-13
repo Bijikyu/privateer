@@ -5,9 +5,9 @@ var privateersCtrl = require('../../controllers/api/privateers');
 router.use(require('../../config/auth'));
 
 /* GET /api/privateers */
-router.get('/', checkAuth, privateersCtrl.index);
+router.get('/', privateersCtrl.index);
 router.get('/:id', privateersCtrl.show);
-router.post('/', checkAuth, privateersCtrl.create);
+router.post('/', privateersCtrl.create);
 router.delete('/:id', privateersCtrl.delete);
 router.put('/:id', privateersCtrl.update);
 
