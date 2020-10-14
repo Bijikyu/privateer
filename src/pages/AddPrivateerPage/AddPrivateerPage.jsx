@@ -28,31 +28,36 @@ class AddPrivateerPage extends Component {
     
     render(props) {
         return (
-            <>
-        <h1>Commission a Privateer!</h1>
-        <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
+        <>          
+            <br/>
+            <h1>Commission a Privateer!</h1>
+            <br/>
+            <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
           
-          <div className="form-group">
-            <label>Product or Brand Name: </label>
-            <input className="form-control" name="booty" required
-            value={this.state.formData.booty} onChange={this.handleChange}/>
-          </div>
-            &nbsp;
-          <div className="form-group">
-            <label>Bounty (USD): </label>
-            <input className="form-control" name="bounty" required
-              value={this.state.formData.bounty} onChange={this.handleChange}/>
-          </div>
-            &nbsp;
-          <div className="form-group">
-            <label>Armaments! Customise Your Cease and Desist</label><br></br>
-            <br></br>
-            <textarea className="form-control" name="canon"
-              value={this.state.formData.canon} onChange={this.handleChange}/>
-          </div>
-          <br></br>
-          <button type="submit" className="btn" disabled={this.state.invalidForm}> COMMISSION YOUR PRIVATEER </button>
-        </form>
+                <div className="form-group">
+                    <label>Product or Brand Name: </label>
+                    <input className="form-control" name="booty" required
+                    value={this.state.formData.booty} onChange={this.handleChange}/>
+                </div>
+                    &nbsp;
+
+                <div className="form-group">
+                    <label>Bounty (USD): </label>
+                    <input className="form-control" name="bounty" required
+                    value={this.state.formData.bounty} onChange={this.handleChange}/>
+                </div>
+                    &nbsp;
+
+                <div className="form-group">
+                    <label>Armaments! Customise Your Cease and Desist</label><br></br>
+
+                    <textarea className="form-control" name="canon"
+                    value={this.state.formData.canon} onChange={this.handleChange}/>
+                </div>
+
+                <br></br>
+                <button type="submit" className="btn" disabled={this.state.invalidForm}> COMMISSION YOUR PRIVATEER </button>
+            </form>
       </>
     );
 }

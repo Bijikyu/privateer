@@ -8,12 +8,17 @@ main {
     align-items: center;
 }
 
+a {
+    color: white;
+
+}
+
 form {
     width: 50vw;
 }
 
 button {
-    margin: 15px;
+    margin: 5px;
 }
 
 .row {
@@ -23,18 +28,38 @@ button {
     justify-content: center;
 }
 
+.text {
+    margin: 0 20px 20px 20px;
+}
+
 .fleet {
     background: lightblue url("https://i.gifer.com/RowJ.gif") no-repeat;
-    background-size: 100% 200%;
+    background-size: 100vw 220%;
     background-position: 50% 85%;
     width: 100vw;
     height: auto;
-    padding-bottom: -10px;
+    border: 1px solid black;
 }
 
 .ship {
     background: url("https://media.giphy.com/media/j2HThVbydxrvyljqq0/giphy.gif") no-repeat;
-    background-size: 90px 90px;
+    background-size: 100px 100px;
+    background-position: 50% 60%;
     /*width: 30vw;
     height: auto;*/
+}
+
+.title {
+    background-color: white;
+    padding: 4px 6px 4px 6px;
+    border-radius: 7px;
+    margin-top: 0px;
+    color: black;
+    border: 1px outset lavender;
+}
+
+.seaBtn {
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px 3px #000000;
 }

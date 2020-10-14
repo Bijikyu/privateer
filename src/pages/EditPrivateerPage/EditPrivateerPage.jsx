@@ -25,7 +25,9 @@ class EditPrivateerPage extends Component {
   render() {
     return (
       <>
+        <br/>
         <h1>Edit Privateer</h1>
+        <br/>
         <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
           
           <div className="form-group">
@@ -42,8 +44,6 @@ class EditPrivateerPage extends Component {
           &nbsp;
           <div className="form-group">
             <label>Armaments! Amend your Cease and Desist</label>
-            <br></br>
-            <br></br>
             <textarea className="form-control" name="canon"
               value={this.state.formData.canon} onChange={this.handleChange}/>
           </div>
