@@ -16,6 +16,7 @@ import privateerService from '../../utils/privateerService';
 import * as privateerAPI from "../../utils/privateerService";
 
 import NavBar from '../../components/NavBar/NavBar';
+import Footer from '../../components/Footer/Footer';
 
 class App extends Component {
   constructor() {
@@ -82,12 +83,10 @@ class App extends Component {
         <header className="App-header">
           <image src=""></image>
           <h1>Privateer</h1>
-          <nav>
             <NavBar 
               user={this.state.user} 
               handleLogout={this.handleLogout} 
             />
-          </nav>
         </header>
         <main> 
           <Switch>
@@ -129,6 +128,7 @@ class App extends Component {
             />
           </Switch>
         </main>
+        <Footer/>
       </div>
     );
   }

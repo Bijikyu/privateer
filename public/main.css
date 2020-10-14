@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'TreasureMap';
+    src: url('./TreasureMapDeadhand-yLA3.ttf');
+}
+
 body {
     box-sizing: border-box;
 }
@@ -9,8 +14,14 @@ main {
 }
 
 a {
-    color: white;
+    color: rgb(130, 202, 250);
 
+}
+
+h1, h2, h3 {
+    margin: 0 10vw 20px 10vw;
+    font-family: 'TreasureMap';
+    font-size: calc(20px + 3vw);
 }
 
 form {
@@ -29,7 +40,9 @@ button {
 }
 
 .text {
-    margin: 0 20px 20px 20px;
+    margin: 0 10vw 20px 10vw;
+    font-size: calc(10px + 1vw);
+    text-align: left;
 }
 
 .fleet {
@@ -39,6 +52,7 @@ button {
     width: 100vw;
     height: auto;
     border: 1px solid black;
+    margin: 1vh 0 10vw 0;
 }
 
 .ship {
@@ -62,4 +76,20 @@ button {
     background-color: transparent;
     color: white;
     text-shadow: 2px 2px 3px #000000;
+}
+
+footer {
+    background-color: #000080;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 5px 0 0px 0;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 2px solid #5a5a5a;
 }

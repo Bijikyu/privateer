@@ -8,7 +8,6 @@ const MainPage = (props) => {
     <div>
       <br></br>
       <h3>Protect your Brand or Product from Piracy and Exploitation</h3>
-      <br></br>
       <p className="text">This service enables businesses and creators to 
         automatically have the web monitored for their products and 
         brands in order to protect them from piracy and exploitation. 
