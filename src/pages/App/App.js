@@ -82,6 +82,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <image src=""></image>
+          <br></br>
           <h1>Privateer</h1>
             <NavBar 
               user={this.state.user} 

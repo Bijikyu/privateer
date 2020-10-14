@@ -16,7 +16,7 @@ const MainPage = (props) => {
         <br></br> 
         <br></br> 
         Just click "Commission a Privateer" above 
-        on the navigation bar and to choose the products and brands you 
+        on the navigation bar to choose the products and brands you 
         want to protect, to set a bounty for each succesful takedown, 
         and tweak the standard cease and desist letter. Once your 
         privateer is "commissioned" you will see them in the Fleet 

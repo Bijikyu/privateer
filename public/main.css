@@ -3,6 +3,10 @@
     src: url('./TreasureMapDeadhand-yLA3.ttf');
 }
 
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body {
     box-sizing: border-box;
 }
@@ -11,17 +15,25 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: serif;
 }
 
 a {
     color: rgb(130, 202, 250);
+}
 
+a:hover {
+    color: rgb(79, 247, 250);
 }
 
 h1, h2, h3 {
     margin: 0 10vw 20px 10vw;
     font-family: 'TreasureMap';
     font-size: calc(20px + 3vw);
+}
+
+h1 {
+    font-size: calc(25px + 5vw);
 }
 
 form {
@@ -79,7 +91,7 @@ button {
 }
 
 footer {
-    background-color: #000080;
+    background-image: linear-gradient(#000080, rgb(67, 67, 67));
     position: fixed;
     bottom: 0px;
     left: 0px;
