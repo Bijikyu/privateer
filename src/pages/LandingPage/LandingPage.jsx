@@ -7,6 +7,11 @@ const MainPage = (props) => {
   return (
     <div>
       <br></br>
+      <PrivateerList 
+        user={props.user}
+        privateers={props.privateers}
+        handleDeletePrivateer={props.handleDeletePrivateer}
+      />
       <h3>Protect your Brand or Product from Piracy and Exploitation</h3>
       <p className="text">This service enables businesses and creators to 
         automatically have the web monitored for their products and 
@@ -15,18 +20,15 @@ const MainPage = (props) => {
         out to the webmaster of the offending site.
         <br></br> 
         <br></br> 
-        Just click "Commission a Privateer" above 
-        on the navigation bar to choose the products and brands you 
-        want to protect, to set a bounty for each succesful takedown, 
+        Once you are logged in, "Commission a Privateer" will appear 
+        in the navigation bar. Just select that to choose the products and 
+        brands you want to protect, to set a bounty for each succesful takedown, 
         and tweak the standard cease and desist letter. Once your 
         privateer is "commissioned" you will see them in the Fleet 
-        section of this page below. We are now monitoring the high seas (the web) 
+        section of the website. We are now monitoring the high seas (the web) 
         in pursuit of your wayward contraband.</p>
-      <PrivateerList 
-        user={props.user}
-        privateers={props.privateers}
-        handleDeletePrivateer={props.handleDeletePrivateer}
-      />
+        <br></br> 
+        <br></br> 
     </div>
   );
 };

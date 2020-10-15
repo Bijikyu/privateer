@@ -7,8 +7,16 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.logo {
+    width: 25vh;
+    max-width: 150px;
+    height: auto;
+    margin: 0 100px 0 100px ;
+}
+
 body {
     box-sizing: border-box;
+    background-image: url('paper.jpg');
 }
 
 main {
@@ -48,7 +56,8 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%
 }
 
 .text {
@@ -61,10 +70,10 @@ button {
     background: lightblue url("https://i.gifer.com/RowJ.gif") no-repeat;
     background-size: 100vw 220%;
     background-position: 50% 85%;
-    width: 100vw;
+    width: 100%;
     height: auto;
     border: 1px solid black;
-    margin: 1vh 0 10vw 0;
+    margin: 5px 0 2.5vw 0;
 }
 
 .ship {
@@ -88,6 +97,10 @@ button {
     background-color: transparent;
     color: white;
     text-shadow: 2px 2px 3px #000000;
+}
+
+form {
+    margin: 0 0 50px 0;
 }
 
 footer {

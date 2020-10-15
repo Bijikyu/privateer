@@ -7,21 +7,17 @@ const NavBar = (props) => {
   let nav = props.user ?
     <div>
       <nav>
-      <NavLink exact to='/' className='NavBar-link'>Home</NavLink>
-      &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <NavLink exact to='/add' className='NavBar-link'>Commission a Privateer</NavLink>
-      <br></br>
-      <span className='NavBar-welcome'>Ahoy, {props.user.name}!</span>
-      &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
-      <NavLink to='' onClick={props.handleLogout} className='NavBar-link'>Log Out</NavLink>
+        <h4>Protect your copyrights and trademarks</h4>
+        <NavLink exact to='/' className='NavBar-link'>Home</NavLink>
+        &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <NavLink exact to='/add' className='NavBar-link'>Commission a Privateer</NavLink>
+        <br></br>
       </nav>
     </div>
     :
-    <div>
-      <NavLink to='/login' className='NavBar-link'>Log In</NavLink>
-      &nbsp;&nbsp;|&nbsp;&nbsp;
-      <NavLink to='/signup' className='NavBar-link'>Sign Up</NavLink>
-    </div>;
+    <>
+    <h4>Protect your copyrights and trademarks</h4>
+    </>;
 
   return (
     <div className='NavBar'>

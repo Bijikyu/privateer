@@ -29,9 +29,8 @@ class AddPrivateerPage extends Component {
     render(props) {
         return (
         <>          
-            <br/>
+            <br></br>
             <h1>Commission a Privateer!</h1>
-            <br/>
             <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
           
                 <div className="form-group">
@@ -50,12 +49,9 @@ class AddPrivateerPage extends Component {
 
                 <div className="form-group">
                     <label>Armaments! Customise Your Cease and Desist</label><br></br>
-
                     <textarea className="form-control" name="canon"
                     value={this.state.formData.canon} onChange={this.handleChange}/>
                 </div>
-
-                <br></br>
                 <button type="submit" className="btn" disabled={this.state.invalidForm}> COMMISSION YOUR PRIVATEER </button>
             </form>
       </>

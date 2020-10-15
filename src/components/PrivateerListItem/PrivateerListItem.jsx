@@ -20,9 +20,7 @@ function PrivateerListItem({privateer, handleDeletePrivateer}) {
         <Link className='btn btn-xs seaBtn'to={{
             pathname: '/edit',
             state: {privateer}
-        }}>Edit<br></br></Link>
-        
-
+        }}>Edit</Link>
     </div>
   );
 }

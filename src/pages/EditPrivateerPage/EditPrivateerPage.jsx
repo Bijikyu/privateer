@@ -27,7 +27,6 @@ class EditPrivateerPage extends Component {
       <>
         <br/>
         <h1>Edit Privateer</h1>
-        <br/>
         <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
           
           <div className="form-group">
@@ -35,24 +34,22 @@ class EditPrivateerPage extends Component {
             <input className="form-control" name="booty" required
               value={this.state.formData.booty} onChange={this.handleChange}/>
           </div>
-            &nbsp;
           <div className="form-group">
             <label>Bounty: $</label>
             <input className="form-control" name="bounty" required
               value={this.state.formData.bounty} onChange={this.handleChange}/>
           </div>
-          &nbsp;
           <div className="form-group">
-            <label>Armaments! Amend your Cease and Desist</label>
+            <label>Armaments! <br></br>Amend your Cease and Desist</label>
             <textarea className="form-control" name="canon"
               value={this.state.formData.canon} onChange={this.handleChange}/>
           </div>
-          <br></br>
           <button type="submit" className="btn btn-xs" disabled={this.state.invalidForm}>RENEW YOUR PRIVATEER!</button>
           <br></br>
           <br></br>
           <Link to='/'>CANCEL</Link>
         </form>
+        <br></br>
       </>
     );
   }
