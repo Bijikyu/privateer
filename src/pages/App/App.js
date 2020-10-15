@@ -83,7 +83,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <div className="row">
-            <img src={'/Privateers_Logo.png'} alt="site logo" className="logo"></img>
+            <img src={'/images/ship_only.png'} alt="site logo" className="logo"></img>
               <NavBar 
                 user={this.state.user}
               />
