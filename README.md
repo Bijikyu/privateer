@@ -4,7 +4,6 @@ This React CRUD web app enables businesses and creators to automatically have th
 In the Age of Sail, privateers were pirate hunters, often little different than pirates themselves, who with the authority given to them by a government contract, plundered the wealth of the pirates they "neutralised."
 
 ![Screenshot of Desktop View of Privateer Landing Page](github.gif)
-![Screenshot of Mobile View of Privateer Landing Page](URL-TBD)
 
 **Technologies Used:** Javascript, HTML, CSS, React, NodeJS, Express, MongoDB, Mongoose, Token based auth, Paint.net.
 
@@ -18,4 +17,9 @@ Want to protect additional products or brands? Commission additional privateers.
 [Trello](https://trello.com/b/RlEeIJjM/privateer)
 
 **Next Steps:**
-
+* Set up with nodemail
+* Connect to google monitoring
+* Screenshot
+* Screenshot image transformation
+* Webscraping
+* Payment processing
