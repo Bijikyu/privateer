@@ -11,12 +11,4 @@ router.post('/', privateersCtrl.create);
 router.delete('/:id', privateersCtrl.delete);
 router.put('/:id', privateersCtrl.update);
 
-
-
-function checkAuth(req, res, next) {
-    //TODO make not function on no log in
-    if (req.user) return next();
-    return res.status(401).json({msg: 'Not Authorized'});
-}
-
 module.exports = router;

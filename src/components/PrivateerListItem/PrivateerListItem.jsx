@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 
 function PrivateerListItem({privateer, handleDeletePrivateer}) { 
   return (
-    
     <div className='panel panel-default ship'>
         <br></br>
         <Link className='title' to={{

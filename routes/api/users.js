@@ -6,11 +6,4 @@ const usersCtrl = require('../../controllers/api/users');
 router.post('/signup', usersCtrl.signup);
 router.post('/login', usersCtrl.login);
 
-
-
-/*---------- Protected Routes ----------*/
-
-
-
-
 module.exports = router;

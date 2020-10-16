@@ -3,7 +3,6 @@ import ExplainerBooty from '../../components/ExplainerItems/ExplainerBooty.jsx'
 import ExplainerBounty from '../../components/ExplainerItems/ExplainerBounty.jsx'
 import ExplainerCanon from '../../components/ExplainerItems/ExplainerCanon.jsx'
 
-
 class AddPrivateerPage extends Component {
     state = {
         invalidForm: true,

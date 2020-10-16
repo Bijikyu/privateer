@@ -1,8 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-
-
 const NavBar = (props) => {
   let nav = props.user ?
     <div>

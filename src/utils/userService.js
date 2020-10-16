@@ -10,7 +10,6 @@ function signup(user) {
   })
   .then(res => {
     if (res.ok) return res.json();
-    // Probably a duplicate email
     throw new Error('Email already taken!');
   })
   .then(({token}) => tokenService.setToken(token));
@@ -32,7 +31,6 @@ function login(creds) {
   })
   .then(res => {
     if (res.ok) return res.json();
-    // Probably a duplicate email
     throw new Error('Bad Credentials!');
   })
   .then(({token}) => tokenService.setToken(token));

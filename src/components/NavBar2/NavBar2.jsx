@@ -1,8 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-
-
 const NavBar2 = (props) => {
   let nav = props.user ?
     <div id="log" className="navBit">
