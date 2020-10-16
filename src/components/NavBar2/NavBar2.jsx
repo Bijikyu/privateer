@@ -5,15 +5,15 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar2 = (props) => {
   let nav = props.user ?
-    <div>
+    <div id="log" className="navBit">
       <nav>
         <span className='NavBar-welcome'>Ahoy, {props.user.name}!</span>
-        &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
+        <br></br>
         <NavLink to='' onClick={props.handleLogout} className='NavBar-link'>Log Out</NavLink>
       </nav>
     </div>
     :
-    <div>
+    <div id="log" className="navBit">
       <NavLink to='/login' className='NavBar-link'>Log In</NavLink>
       &nbsp;&nbsp;|&nbsp;&nbsp;
       <NavLink to='/signup' className='NavBar-link'>Sign Up</NavLink>

@@ -83,7 +83,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <div className="row">
-            <img src={'/images/ship_only.png'} alt="site logo" className="logo"></img>
+            <img src={'/images/ship_only.png'} alt="site logo" className="navBit"></img>
               <NavBar 
                 user={this.state.user}
               />
@@ -97,12 +97,6 @@ class App extends Component {
           <Switch>
             <Route exact path="/" render={() => (
               <LandingPage user={this.state.user}
-                privateers={this.state.privateers}
-                handleDeletePrivateer={this.handleDeletePrivateer}
-              />)}
-            />
-            <Route exact path="/home" render={() => (
-              <MainPage user={this.state.user}
                 privateers={this.state.privateers}
                 handleDeletePrivateer={this.handleDeletePrivateer}
               />)}

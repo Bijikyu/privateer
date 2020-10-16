@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import ExplainerBooty from '../../components/ExplainerItems/ExplainerBooty.jsx'
+import ExplainerBounty from '../../components/ExplainerItems/ExplainerBounty.jsx'
+import ExplainerCanon from '../../components/ExplainerItems/ExplainerCanon.jsx'
 
 class EditPrivateerPage extends Component {
   state = {
@@ -28,23 +31,27 @@ class EditPrivateerPage extends Component {
         <br/>
         <h1>Edit Privateer</h1>
         <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
-          
-          <div className="form-group">
-            <label>Product or Brand Name: </label>
-            <input className="form-control" name="booty" required
-              value={this.state.formData.booty} onChange={this.handleChange}/>
+          <div className="row frow">
+            <div className="group">
+              <ExplainerBooty/>
+              <label>Product or Brand Name: </label>
+              <input className="form-control" name="booty" required
+                value={this.state.formData.booty} onChange={this.handleChange}/>
+            </div>
+            <div className="group">
+              <ExplainerBounty/>
+              <label>Bounty: $</label>
+              <input className="form-control" name="bounty" required
+                value={this.state.formData.bounty} onChange={this.handleChange}/>
+            </div>
+            <div className="group">
+              <ExplainerCanon/>
+              <label>Your Cease and Desist</label>
+              <textarea className="form-control" name="canon"
+                value={this.state.formData.canon} onChange={this.handleChange}/>
+            </div>
           </div>
-          <div className="form-group">
-            <label>Bounty: $</label>
-            <input className="form-control" name="bounty" required
-              value={this.state.formData.bounty} onChange={this.handleChange}/>
-          </div>
-          <div className="form-group">
-            <label>Armaments! <br></br>Amend your Cease and Desist</label>
-            <textarea className="form-control" name="canon"
-              value={this.state.formData.canon} onChange={this.handleChange}/>
-          </div>
-          <button type="submit" className="btn btn-xs" disabled={this.state.invalidForm}>RENEW YOUR PRIVATEER!</button>
+          <button type="submit" className="btn btn-xs btn-danger" disabled={this.state.invalidForm}>RENEW YOUR PRIVATEER!</button>
           <br></br>
           <br></br>
           <Link to='/'>CANCEL</Link>

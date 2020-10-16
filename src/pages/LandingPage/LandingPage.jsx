@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import PrivateerList from "../../components/PrivateerList/PrivateerList.jsx"
+import Explainer from "../../components/Explainer/Explainer.jsx"
 
 
 const MainPage = (props) => {
@@ -12,6 +13,7 @@ const MainPage = (props) => {
         privateers={props.privateers}
         handleDeletePrivateer={props.handleDeletePrivateer}
       />
+      <Explainer/>
       <h3>Protect your Brand or Product from Piracy and Exploitation</h3>
       <p className="text">This service enables businesses and creators to 
         automatically have the web monitored for their products and 

@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import ExplainerBooty from '../../components/ExplainerItems/ExplainerBooty.jsx'
+import ExplainerBounty from '../../components/ExplainerItems/ExplainerBounty.jsx'
+import ExplainerCanon from '../../components/ExplainerItems/ExplainerCanon.jsx'
 
 
 class AddPrivateerPage extends Component {
@@ -32,27 +35,31 @@ class AddPrivateerPage extends Component {
             <br></br>
             <h1>Commission a Privateer!</h1>
             <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
-          
-                <div className="form-group">
-                    <label>Product or Brand Name: </label>
-                    <input className="form-control" name="booty" required
-                    value={this.state.formData.booty} onChange={this.handleChange}/>
-                </div>
-                    &nbsp;
+                <div className="row frow">
+                    <div className="group">
+                        <ExplainerBooty/>
+                        <label>Product or Brand Name: </label>
+                        <input className="form-control" name="booty" required
+                        value={this.state.formData.booty} onChange={this.handleChange}/>
+                    </div>
+                        &nbsp;
 
-                <div className="form-group">
-                    <label>Bounty (USD): </label>
-                    <input className="form-control" name="bounty" required
-                    value={this.state.formData.bounty} onChange={this.handleChange}/>
-                </div>
-                    &nbsp;
+                    <div className="group">
+                        <ExplainerBounty/>
+                        <label>Bounty (USD): </label>
+                        <input className="form-control" name="bounty" required
+                        value={this.state.formData.bounty} onChange={this.handleChange}/>
+                    </div>
+                        &nbsp;
 
-                <div className="form-group">
-                    <label>Armaments! Customise Your Cease and Desist</label><br></br>
-                    <textarea className="form-control" name="canon"
-                    value={this.state.formData.canon} onChange={this.handleChange}/>
+                    <div className="group">
+                        <ExplainerCanon/>
+                        <label>Armaments! Customise Your Cease and Desist</label><br></br>
+                        <textarea className="form-control" name="canon"
+                        value={this.state.formData.canon} onChange={this.handleChange}/>
+                    </div>
                 </div>
-                <button type="submit" className="btn" disabled={this.state.invalidForm}> COMMISSION YOUR PRIVATEER </button>
+                <button type="submit" className="btn btn-xs btn-danger" disabled={this.state.invalidForm}> COMMISSION YOUR PRIVATEER </button>
             </form>
       </>
     );

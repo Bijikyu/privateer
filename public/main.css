@@ -5,13 +5,25 @@
 
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
 }
 
 .logo {
     width: 25vh;
     max-width: 150px;
     height: auto;
-    margin: 0 100px 0 100px ;
+    margin: 0 120px 0 98px ;
+}
+
+.navBit {
+    width: 200px;
+    height: auto;
+    margin: 0 15px 0 15px ;
+    padding: 5px;
+}
+
+#log {
+    white-space: nowrap;
 }
 
 body {
@@ -45,7 +57,7 @@ h1 {
 }
 
 form {
-    width: 50vw;
+    width: 100vw;
 }
 
 button {
@@ -58,6 +70,14 @@ button {
     align-items: center;
     justify-content: space-evenly;
     width: 100%
+}
+
+.frow {
+    margin: 0 0 15px 0;
+}
+
+.group {
+    margin: 0 0px 0 0px;
 }
 
 .text {
@@ -100,11 +120,11 @@ button {
 }
 
 form {
-    margin: 0 0 50px 0;
+    margin: 0 0 60px 0;
 }
 
 footer {
-    background-image: linear-gradient(#000080, rgb(67, 67, 67));
+    background-image: linear-gradient(#000080, black);
     position: fixed;
     bottom: 0px;
     left: 0px;
