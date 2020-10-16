@@ -30,6 +30,8 @@
 body {
     box-sizing: border-box;
     background-image: url('/images/paper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
@@ -118,7 +120,15 @@ button {
 
 form {
     margin: 0 0 60px 0;
-    width: 25vw;
+    width: 100vw;
+}
+
+.logForm {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 footer {

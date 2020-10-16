@@ -59,8 +59,11 @@ class AddPrivateerPage extends Component {
                         value={this.state.formData.canon} onChange={this.handleChange}/>
                     </div>
                 </div>
+                <br></br>
                 <button type="submit" className="btn btn-xs btn-danger" disabled={this.state.invalidForm}> COMMISSION YOUR PRIVATEER </button>
             </form>
+            <br></br>
+            <br></br>
       </>
     );
 }

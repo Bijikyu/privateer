@@ -40,8 +40,10 @@ class SignupForm extends Component {
   render() {
     return (
       <div>
-        <header className="header-footer">Sign Up</header>
-        <form className="form-horizontal" onSubmit={this.handleSubmit} >
+        <br></br>
+        <h2 className="header-footer">Sign Up</h2>
+        <br></br>
+        <form className="form-horizontal logForm" onSubmit={this.handleSubmit} >
           <div className="form-group">
             <div className="col-sm-12">
               <input type="text" className="form-control" placeholder="Name" value={this.state.name} name="name" onChange={this.handleChange} />
@@ -69,7 +71,9 @@ class SignupForm extends Component {
           </div>
           <div className="form-group">
             <div className="col-sm-12 text-center">
-              <button className="btn btn-default" disabled={this.isFormInvalid()}>Sign Up</button>&nbsp;&nbsp;
+              <button className="btn btn-default btn-danger" disabled={this.isFormInvalid()}>Sign Up</button>&nbsp;&nbsp;
+              <br></br>
+              <br></br>
               <Link to='/'>Cancel</Link>
             </div>
           </div>

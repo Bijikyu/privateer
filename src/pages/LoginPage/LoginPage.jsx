@@ -43,8 +43,10 @@ class LoginPage extends Component {
   render() {
     return (
       <>
-        <h1>Log In</h1>
-        <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
+        <br></br>
+        <h2>Log In</h2>
+        <br></br>
+        <form className='logForm' ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>Your email (required)</label>
             <input className="form-control" name="email" required
@@ -55,7 +57,7 @@ class LoginPage extends Component {
             <input type="password" className="form-control" name="password"
               value={this.state.formData.password} onChange={this.handleChange}/>
           </div>
-          <button type="submit" className="btn" disabled={this.state.invalidForm}>LOG IN</button>
+          <button type="submit" className="btn btn-danger" disabled={this.state.invalidForm}>LOG IN</button>
         </form>
       </>
     );

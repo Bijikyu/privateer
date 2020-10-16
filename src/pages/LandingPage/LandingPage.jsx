@@ -31,6 +31,8 @@ const MainPage = (props) => {
         in pursuit of your wayward contraband.</p>
         <br></br> 
         <br></br> 
+        <br></br> 
+        <br></br> 
     </div>
   );
 };
