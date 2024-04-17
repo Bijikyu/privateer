@@ -1,0 +1,5 @@
+The `PrivateerDetailPage.jsx` file contains a React component named `PrivateerDetailPage`, which is responsible for rendering a detailed view of a specific privateer. It utilizes the `PrivateerCard` component to display the privateer's information. The component imports the necessary React library and the `PrivateerCard` component from a relative path within the project.
+
+When the `PrivateerDetailPage` function component is rendered, it extracts a `privateer` object from the `props.location.state` provided by the React Router. This object contains details about the privateer that are to be displayed. The component structure includes a line break and a heading titled "This Privateer" followed by the `PrivateerCard` component. The `PrivateerCard` is given a unique key derived from the privateer's ID and is passed the entire `privateer` object as a prop.
+
+Finally, the `PrivateerDetailPage` component is exported as the default export of the file, allowing it to be imported and used in other parts of the application where a detailed view of a privateer is required.
