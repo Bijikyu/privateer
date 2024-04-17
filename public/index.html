@@ -1,45 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/privateer.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content=""/>
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!-- manifest.json provides metadata used when your web app is installed on a
-    user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+// This HTML file serves as the template for a web application named "Privateer". It includes references to external resources like Bootstrap, jQuery, and custom stylesheets. It also sets up the document structure and metadata necessary for web apps, including mobile and desktop installations.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Pirata+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
-    <title>Privateer</title>
+<!DOCTYPE html> // Defines the document type and version of HTML
+<html lang="en"> // Starts the HTML document and specifies the language as English
+  <head> // Contains meta-information about the document
+    <meta charset="utf-8" /> // Specifies the character encoding for the HTML document
+    <link rel="icon" href="%PUBLIC_URL%/privateer.ico" /> // Links a favicon to be displayed in the tab
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> // Sets the viewport to ensure the site is responsive
+    <meta name="theme-color" content="#000000" /> // Sets the color of the toolbar in mobile browsers
+    <meta name="description" content=""/> // Provides a description for the page, which can be used by search engines
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> // Specifies an icon for Apple devices
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> // Links to the web app manifest that defines how the app should behave when installed
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> // Links Bootstrap CSS with integrity and crossorigin attributes for security
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Pirata+One&display=swap" rel="stylesheet"> // Imports custom fonts from Google Fonts
+    <link rel="stylesheet" href="./main.css"> // Links to the main stylesheet for custom styles
+    <title>Privateer</title> // Sets the title of the document to be displayed in the browser tab
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <body> // Contains the content of the HTML document
+    <noscript>You need to enable JavaScript to run this app.</noscript> // Displays a message if JavaScript is disabled in the user's browser
+    <div id="root"></div> // Placeholder where the root React component will be rendered
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> // Includes jQuery library with integrity and crossorigin attributes
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> // Includes Popper.js library for tooltips and popovers with integrity and crossorigin attributes
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> // Includes Bootstrap JavaScript with integrity and crossorigin attributes
   </body>
 </html>
