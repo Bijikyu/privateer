@@ -1,0 +1,7 @@
+The `PrivateerList.jsx` file contains a React functional component named `PrivateerList` that is responsible for rendering a list of `PrivateerListItem` components. This component is designed to display a user's fleet of privateers, but only if a user is currently logged in and there is at least one privateer in the list.
+
+The component imports the React library and the `PrivateerListItem` component from a relative path. It uses a React Fragment to group the list of `PrivateerListItem` components without adding extra nodes to the DOM. The rendering of the list is conditional; it checks for the presence of a user and any privateers. If either is missing, nothing is rendered.
+
+When the conditions are met, the component displays a heading titled "Your Fleet" and uses the `.map()` function to iterate over the array of privateers passed in through props. For each privateer, a `PrivateerListItem` component is rendered with the privateer data and a delete handler function, both provided as props. Each list item is uniquely identified by the privateer's `_id` property, which is used as a key to help React's reconciliation process.
+
+Finally, the `PrivateerList` component is exported as the default export of the file, making it available for import and use in other parts of the application.

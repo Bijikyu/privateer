@@ -1,74 +1,76 @@
-import React, {Component} from 'react';
-import ExplainerBooty from '../../components/ExplainerItems/ExplainerBooty.jsx'
-import ExplainerBounty from '../../components/ExplainerItems/ExplainerBounty.jsx'
-import ExplainerCanon from '../../components/ExplainerItems/ExplainerCanon.jsx'
+// This file defines a React component that allows users to commission a privateer by filling out a form with details such as product name, bounty, and a custom cease and desist letter.
 
-class AddPrivateerPage extends Component {
-    state = {
-        invalidForm: true,
-        formData: {
-            booty: '',
-            bounty: '10',
-            canon: ceaseDesist
+import React, {Component} from 'react'; // Importing React and the Component class from the react package
+import ExplainerBooty from '../../components/ExplainerItems/ExplainerBooty.jsx' // Importing the ExplainerBooty component from a relative path
+import ExplainerBounty from '../../components/ExplainerItems/ExplainerBounty.jsx' // Importing the ExplainerBounty component from a relative path
+import ExplainerCanon from '../../components/ExplainerItems/ExplainerCanon.jsx' // Importing the ExplainerCanon component from a relative path
+
+class AddPrivateerPage extends Component { // Declaring a new class component named AddPrivateerPage that extends React.Component
+    state = { // Initializing the component's state
+        invalidForm: true, // State property to track if the form is valid or not
+        formData: { // State property to hold form data
+            booty: '', // Form field for product or brand name
+            bounty: '10', // Form field for bounty with a default value of '10'
+            canon: ceaseDesist // Form field for custom cease and desist letter, initialized with the ceaseDesist variable
         }
     };
     
-    formRef = React.createRef();
+    formRef = React.createRef(); // Creating a ref object to reference the form DOM element
     
-    handleSubmit = e => {
-        e.preventDefault();
-        this.props.handleAddPrivateer(this.state.formData);
+    handleSubmit = e => { // Method to handle form submission
+        e.preventDefault(); // Preventing the default form submission behavior
+        this.props.handleAddPrivateer(this.state.formData); // Calling a method passed via props with the current form data
     }
     
-    handleChange = e => {
-        const formData = {...this.state.formData, [e.target.name]: e.target.value};
-        this.setState({
-            formData,
-            invalidForm: !this.formRef.current.checkValidity()
+    handleChange = e => { // Method to handle changes in form inputs
+        const formData = {...this.state.formData, [e.target.name]: e.target.value}; // Creating a new formData object with the updated value for the changed input
+        this.setState({ // Updating the component's state with the new formData and form validity
+            formData, // Updated formData object
+            invalidForm: !this.formRef.current.checkValidity() // Checking if the form is valid and updating the invalidForm state accordingly
         });
     };
     
-    render(props) {
-        return (
+    render(props) { // Render method to output the JSX for the component
+        return ( // Returning the JSX to render
         <>          
-            <br></br>
-            <h1>Commission a Privateer!</h1>
-            <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
-                <div className="row frow">
-                    <div className="group">
-                        <ExplainerBooty/>
-                        <label>Product or Brand Name: </label>
-                        <input className="form-control" name="booty" required
-                        value={this.state.formData.booty} onChange={this.handleChange}/>
+            <br></br> // Line break for spacing
+            <h1>Commission a Privateer!</h1> // Heading for the page
+            <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}> // Form element with a reference, autoComplete off, and an onSubmit handler
+                <div className="row frow"> // Container div for the form layout
+                    <div className="group"> // Div for grouping related form elements
+                        <ExplainerBooty/> // Component that explains the 'booty' field
+                        <label>Product or Brand Name: </label> // Label for the 'booty' input field
+                        <input className="form-control" name="booty" required // Input field for 'booty' with required attribute
+                        value={this.state.formData.booty} onChange={this.handleChange}/> // Binding the input value to the state and setting up the change handler
                     </div>
-                        &nbsp;
+                        &nbsp; // Non-breaking space for layout
 
-                    <div className="group">
-                        <ExplainerBounty/>
-                        <label>Bounty (USD): </label>
-                        <input className="form-control" name="bounty" required
-                        value={this.state.formData.bounty} onChange={this.handleChange}/>
+                    <div className="group"> // Div for grouping related form elements
+                        <ExplainerBounty/> // Component that explains the 'bounty' field
+                        <label>Bounty (USD): </label> // Label for the 'bounty' input field
+                        <input className="form-control" name="bounty" required // Input field for 'bounty' with required attribute
+                        value={this.state.formData.bounty} onChange={this.handleChange}/> // Binding the input value to the state and setting up the change handler
                     </div>
-                        &nbsp;
+                        &nbsp; // Non-breaking space for layout
 
-                    <div className="group">
-                        <ExplainerCanon/>
-                        <label>Armaments! Customise Your Cease and Desist</label><br></br>
-                        <textarea className="form-control" name="canon"
-                        value={this.state.formData.canon} onChange={this.handleChange}/>
+                    <div className="group"> // Div for grouping related form elements
+                        <ExplainerCanon/> // Component that explains the 'canon' field
+                        <label>Armaments! Customise Your Cease and Desist</label><br></br> // Label for the 'canon' textarea
+                        <textarea className="form-control" name="canon" // Textarea for 'canon'
+                        value={this.state.formData.canon} onChange={this.handleChange}/> // Binding the textarea value to the state and setting up the change handler
                     </div>
                 </div>
-                <br></br>
-                <button type="submit" className="btn btn-xs btn-danger" disabled={this.state.invalidForm}> COMMISSION YOUR PRIVATEER </button>
+                <br></br> // Line break for spacing
+                <button type="submit" className="btn btn-xs btn-danger" disabled={this.state.invalidForm}> COMMISSION YOUR PRIVATEER </button> // Submit button with disabled state based on form validity
             </form>
-            <br></br>
-            <br></br>
+            <br></br> // Line break for spacing
+            <br></br> // Line break for spacing
       </>
     );
 }
 }
 
-let ceaseDesist = `It has been determined that you are currently using our Work ____ without our authorization 
+let ceaseDesist = `It has been determined that you are currently using our Work ____ without our authorization // Template string for the cease and desist letter
 which is copyrighted work in accordance with Title 17 of the U.S. Code.
 We have found the unauthorized use of our Work being used at *(URL)*. 
 Accordingly, we demand that you immediately remove the material and cease any further all of our Work, including 
@@ -84,6 +86,6 @@ that you have fully complied with these requirements I shall consider taking any
 to rectify this situation.
 Sincerely,
 Your Name,
-via Privateer.com`;
+via Privateer.com`; // Variable holding the default text for the cease and desist letter
 
-export default AddPrivateerPage;
+export default AddPrivateerPage; // Exporting the AddPrivateerPage component as the default export of the module

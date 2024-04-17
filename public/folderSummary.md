@@ -1,0 +1,5 @@
+The file `index.html` is the main template for the "Privateer" web application. It is structured with standard HTML5 doctype and language settings for English. The head section includes metadata such as character encoding, responsive viewport settings, theme color, and a description placeholder for SEO purposes. It also links to a favicon, an Apple touch icon, and a web app manifest for mobile integration.
+
+External resources are incorporated for styling and functionality: Bootstrap's CSS for responsive design, Google Fonts for typography, and a custom stylesheet for additional styling. The body section prompts users to enable JavaScript and provides a div element with the id "root" as a mount point for a React component.
+
+The file also includes scripts for jQuery, Popper.js, and Bootstrap's JavaScript library, all with specified integrity and crossorigin attributes to maintain security. The title of the document is set to "Privateer," which will appear in the browser tab.

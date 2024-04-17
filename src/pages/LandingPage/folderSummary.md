@@ -1,0 +1,5 @@
+The `LandingPage.jsx` file is a React component that serves as the main page of a web application. It imports the React library, the `Link` component from `react-router-dom`, and two custom components: `PrivateerList` and `Explainer`. The `MainPage` component is a functional component that renders a user interface consisting of a `PrivateerList` component, which displays a list of privateers and provides functionality to delete them, and an `Explainer` component, which likely offers additional information to the user.
+
+The page also includes a section with a heading and a paragraph that describes the service offered by the application. It explains that the service monitors the web for product and brand piracy, sending cease and desist letters to offenders. It guides logged-in users to commission a privateer to protect their products and brands, set bounties for successful takedowns, and customize cease and desist letters. The commissioned privateers are then displayed in the Fleet section of the website.
+
+The file concludes by exporting the `MainPage` component, making it available for use in other parts of the application.
