@@ -1,23 +1,25 @@
+// This file is a .gitignore template that specifies which files and directories Git should ignore.
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+/node_modules // Ignores the node_modules directory where npm packages are installed
+/.pnp // Ignores the .pnp file used by Yarn Plug'n'Play feature
+.pnp.js // Ignores the .pnp.js file used by Yarn Plug'n'Play feature
 
 # testing
-/coverage
+/coverage // Ignores the coverage directory used for code coverage reports
 
 # production
-/build
+/build // Ignores the build directory where the production-ready files are generated
 
 # misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.DS_Store // Ignores .DS_Store files created by macOS for storing directory attributes
+.env.local // Ignores the .env.local file which may contain local environment variables
+.env.development.local // Ignores the .env.development.local file for local development environment variables
+.env.test.local // Ignores the .env.test.local file for local test environment variables
+.env.production.local // Ignores the .env.production.local file for local production environment variables
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+npm-debug.log* // Ignores npm debug log files
+yarn-debug.log* // Ignores Yarn debug log files
+yarn-error.log* // Ignores Yarn error log files
